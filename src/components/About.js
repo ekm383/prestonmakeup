@@ -40,6 +40,7 @@ const StyledAbout = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 80vw;
     margin: 4rem auto;
     .copy {
       flex-basis: 100%;

@@ -34,7 +34,7 @@ const NavBar = () => {
 }
 
 const Nav = styled.nav`
-  width: 100vw;
+  width: 100%;
   margin: 0rem auto;
   padding: 1rem;
   background: var(--black);

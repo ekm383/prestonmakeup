@@ -88,9 +88,13 @@ const StyledIntro = styled.div`
     height: 150px;
   }
   @media (max-width: 768px) {
+    width: 100vw;
+    margin: 0rem auto;
     .container {
+      width: 85vw;
+      margin: 0rem auto;
       height: 300px;
-      padding: 4rem 0rem 4rem 0rem;
+      padding: 5rem 0rem 3rem 0rem;
     }
     .intro-box {
       flex-basis: 100%;
@@ -99,9 +103,8 @@ const StyledIntro = styled.div`
       flex-basis: 100%;
     }
     .intro-box h1 {
-      font-size: 4.5rem;
-      line-height: 3rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 4rem;
+      line-height: 2.3rem;
     }
     .intro-box p {
       font-size: 0.7rem;
