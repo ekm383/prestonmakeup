@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import Burger from "./Burger"
@@ -19,13 +20,14 @@ const NavBar = () => {
   return (
     <Nav>
       <div className="box" key={data.logo}>
-        <Img
-          className="logo"
-          fluid={data.logo.childImageSharp.fluid}
-          alt="logo"
-        />
+        <Link to="/">
+          <Img
+            className="logo"
+            fluid={data.logo.childImageSharp.fluid}
+            alt="logo"
+          />
+        </Link>
       </div>
-
       <Burger />
     </Nav>
   )

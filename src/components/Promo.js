@@ -38,6 +38,7 @@ const StyledPromo = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    align-items: center;
   }
   .promo-box {
     flex-basis: 50%;

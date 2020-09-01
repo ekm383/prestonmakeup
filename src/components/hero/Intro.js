@@ -8,7 +8,7 @@ const Intro = () => {
       <Background className="background">
         <div className="container">
           <div className="intro-box">
-            <p>Forming connections with through makeup.</p>
+            <p>Forming connections through makeup.</p>
             <h1>
               PRESTON <br />
               MAKEUP
