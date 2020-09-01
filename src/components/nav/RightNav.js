@@ -50,8 +50,8 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   align-items: center;
   li {
-    font-size: 0.8rem;
-    font-weight: lighter;
+    font-size: 1rem;
+    font-weight: bold;
     text-transform: uppercase;
     padding-right: 2.5rem;
     &:nth-child(6) {
@@ -60,8 +60,7 @@ const Ul = styled.ul`
     a {
       padding-bottom: 0.4rem;
       text-decoration: none;
-      color: var(--white);
-
+      color: var(--black);
       transition: 0.3s ease-in-out;
       &:hover {
         cursor: pointer;

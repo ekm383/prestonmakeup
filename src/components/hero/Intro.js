@@ -1,59 +1,50 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import Img from "gatsby-image"
 import { FaInstagram } from "react-icons/fa"
+import Background from "./Background"
 
 const Intro = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      headshot: file(relativePath: { eq: "preston-makeup.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <StyledIntro>
-      <div className="intro-box">
-        <p>welcome to</p>
-        <h1>
-          PRESTON <br />
-          MAKEUP
-        </h1>
-        <button>masterclass</button>
-      </div>
-      <div className="image-box">
-        <Img
-          className="headshot"
-          fluid={data.headshot.childImageSharp.fluid}
-          alt="headshot"
-        />
-      </div>
-      <div className="social-box">
-        <p>
-          Preston Meneses <FaInstagram />
-        </p>
-      </div>
+      <Background className="background">
+        <div className="container">
+          <div className="intro-box">
+            <p>welcome to</p>
+            <h1>
+              PRESTON <br />
+              MAKEUP
+            </h1>
+            <button>masterclass</button>
+          </div>
+          <div className="social-box">
+            <p>
+              Preston Meneses <FaInstagram />
+            </p>
+          </div>
+        </div>
+      </Background>
     </StyledIntro>
   )
 }
 
 const StyledIntro = styled.div`
-  width: 90vw;
-  margin: 5rem auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .container {
+    width: 80vw;
+    height: 400px;
+    margin: 0 auto;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   .intro-box {
-    z-index: 100;
-    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
       color: var(--white);
-      font-size: 6rem;
+      font-size: 7rem;
       line-height: 6rem;
     }
     p {
@@ -62,19 +53,11 @@ const StyledIntro = styled.div`
       font-weight: lighter;
     }
   }
-  .image-box {
-    flex-basis: 40%;
-    margin: -30px 0px 0px -100px;
-  }
   .social-box {
-    z-index: 100;
-    flex-basis: 20%;
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
     color: var(--white);
     padding: 1rem 0rem;
-    padding-top: 100px;
     p {
       font-size: 1rem;
       font-weight: lighter;
@@ -85,44 +68,48 @@ const StyledIntro = styled.div`
     }
   }
   button {
+    width: 200px;
     margin: 2rem 0rem;
     padding: 1rem 2rem;
-    background: var(--lightGray);
+    background: none;
     color: var(--white);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
     border: 1px solid var(--white);
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: var(--white);
+      border: 1px solid var(--white);
+      color: var(--black);
+    }
   }
   @media (max-width: 768px) {
-    width: 100vw;
-    .intro-box {
-      flex-basis: 80%;
-      margin-top: 130px;
-      h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-        text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
-      }
+    .container {
+      height: 300px;
+      padding: 4rem 0rem 4rem 0rem;
     }
-    .image-box {
+    .intro-box {
       flex-basis: 100%;
-      margin: -110vw auto 0vw auto;
     }
     .social-box {
       flex-basis: 100%;
-      margin: -120vw 5vw 0vw auto;
-      p {
-        font-size: 0.6rem;
-        font-weight: lighter;
-      }
     }
-  }
-  button {
-    background: none;
-    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    .intro-box h1 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .social-box p {
+      align-items: flex-start;
+      font-size: 0.8rem;
+      margin-right: 1rem;
+      padding: 0;
+    }
+    button {
+    }
   }
 `
 
