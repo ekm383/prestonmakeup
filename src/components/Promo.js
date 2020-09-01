@@ -6,14 +6,17 @@ const Promo = () => {
     <StyledPromo>
       <div className="container">
         <div className="promo-box">
-          <h4>GIMME A BEAT</h4>
+          <h4>GIVE ME A BEAT</h4>
+          <p>Sunday, September 27th 3:00pm PST</p>
           <p>
-            SUNDAY, SEPTEMBER 27th 3PM PST
-            <br />3 HOUR CLASS
+            Preston will demonstrate his sculpting, highlighting, makeup
+            placement, and couture glam along with products he uses.
           </p>
         </div>
         <div className="button-box">
-          <button>masterclass</button>
+          <a href="https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ">
+            <button>masterclass</button>
+          </a>
         </div>
       </div>
     </StyledPromo>
@@ -43,14 +46,14 @@ const StyledPromo = styled.div`
     align-items: flex-start;
     h4 {
       font-size: 2rem;
-      margin-bottom: 1rem;
       color: var(--white);
     }
     p {
       font-size: 1rem;
-      font-weight: bold;
+      font-weight: lighter;
       line-height: 1.5rem;
       color: var(--white);
+      margin-top: 0.2rem;
     }
   }
   .button-box {

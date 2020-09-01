@@ -8,12 +8,14 @@ const Intro = () => {
       <Background className="background">
         <div className="container">
           <div className="intro-box">
-            <p>welcome to</p>
+            <p>Forming connections with through makeup.</p>
             <h1>
               PRESTON <br />
               MAKEUP
             </h1>
-            <button>masterclass</button>
+            <a href="https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ">
+              <button>masterclass</button>
+            </a>
           </div>
           <div className="social-box">
             <p>Preston Meneses | Los Angeles, CA</p>
@@ -41,13 +43,14 @@ const StyledIntro = styled.div`
     justify-content: center;
     h1 {
       color: var(--white);
-      font-size: 7rem;
-      line-height: 6rem;
+      font-size: 8rem;
+      line-height: 4.5rem;
     }
     p {
       color: var(--white);
       font-size: 1rem;
       font-weight: lighter;
+      margin-bottom: 1rem;
     }
   }
   .social-box {
@@ -96,9 +99,13 @@ const StyledIntro = styled.div`
       flex-basis: 100%;
     }
     .intro-box h1 {
-      font-size: 4rem;
-      line-height: 3.5rem;
+      font-size: 4.5rem;
+      line-height: 3rem;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .intro-box p {
+      font-size: 0.7rem;
+      margin-bottom: 0.5rem;
     }
     .social-box p {
       align-items: flex-start;

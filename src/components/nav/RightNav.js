@@ -8,22 +8,23 @@ class RightNav extends Component {
       {
         id: 0,
         path: "/",
-        text: "home",
+        text: "Home",
       },
       {
         id: 1,
         path: "/about",
-        text: "about",
+        text: "About",
       },
       {
         id: 2,
-        path: "/masterclass",
-        text: "masterclass",
+        path:
+          "https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ",
+        text: "Masterclass",
       },
       {
         id: 3,
         path: "/contact",
-        text: "contact",
+        text: "Contact",
       },
     ],
   }
@@ -49,10 +50,11 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  font-family: "Helvetica";
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 0.8rem;
   li {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
     padding-right: 2.5rem;
     &:nth-child(6) {
       padding-right: 0rem;
@@ -64,7 +66,7 @@ const Ul = styled.ul`
       transition: 0.3s ease-in-out;
       &:hover {
         cursor: pointer;
-        color: var(--white);
+        color: var(--gray);
       }
     }
   }

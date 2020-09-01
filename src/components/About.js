@@ -1,27 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 
-const About = () => {
+const About = ({ content, content2, content3, content4, content5 }) => {
   return (
     <StyledAbout>
       <div className="copy">
         <h4>My Story</h4>
-        <p>
-          Preston Meneses is one of the most sought-after celebrity makeup
-          artists working today. His artistry has emerged throughout his 15-year
-          collaboration with the legendary music superstar Janet Jackson, as
-          well as working with celebrities Rihanna, Kelis, Erica Jayne, Brooklyn
-          Decker, Halle Berry, Carmen Electra, Kim Kardashian, and Courtney
-          Love, just to name a few. He was showcased on television with
-          appearances in episodes of “The Real Housewives of Beverly Hills” and
-          working on “Dance Moms.” His talents have graced the pages of
-          countless magazines, including Vogue, Vogue Italia, Harpers Bazar,
-          Harpers Arabia, Essence, InStyle Magazine, FHM, Maxim and numerous
-          billboards in New York’s Times Square.
-        </p>
-      </div>
-      <div className="image">
-        <p>img</p>
+        <p>{content}</p>
+        <p>{content2}</p>
+        <p>{content3}</p>
+        <p>{content4}</p>
+        <p>{content5}</p>
       </div>
     </StyledAbout>
   )
@@ -46,6 +35,7 @@ const StyledAbout = styled.div`
       font-size: 0.9rem;
       font-weight: lighter;
       line-height: 1.7rem;
+      margin-bottom: 1rem;
     }
   }
 

@@ -32,8 +32,10 @@ const NavBar = () => {
 }
 
 const Nav = styled.nav`
-  width: 95vw;
-  margin: 1rem auto 1rem auto;
+  width: 100vw;
+  margin: 0rem auto;
+  padding: 1rem;
+  background: var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +43,7 @@ const Nav = styled.nav`
     width: 60px;
   }
   @media (max-width: 768px) {
-    margin: 1rem auto;
+    margin: 0rem auto;
   }
 `
 

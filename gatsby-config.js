@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Preston Makeup`,
+    description: `Preston Meneses is one of the most sought-after celebrity makeup artists working today working with some of the most well known celebrities.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -32,8 +32,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Playfair Display`,
-            variants: [`900`],
+            family: `Judson`,
+            variants: [`700`],
           },
         ],
       },

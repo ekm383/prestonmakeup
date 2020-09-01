@@ -5,7 +5,7 @@
 
 :root {
   --mainColor: #000000;
-  --darkGray: #171717;
+  --darkGray: #525252;
   --gray: #b5b5b5;
   --lightGray: #cecece;
   --white: #ffffff;
@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display";
+  font-family: "Judson";
 }
 
 p {

@@ -7,7 +7,9 @@ const Footer = () => {
     <StyledFooter>
       <div>
         <p> &#169; Copyright 2020 Preston Makeup</p>
-        <FaInstagram />
+        <a href="https://www.instagram.com/prestonmakeup/">
+          <FaInstagram />
+        </a>
       </div>
     </StyledFooter>
   )
@@ -28,9 +30,15 @@ const StyledFooter = styled.div`
       font-size: 0.6rem;
       font-weight: lighter;
     }
-    svg {
-      font-size: 1.5rem;
-      margin-bottom: -0.4rem;
+    a {
+      svg {
+        font-size: 1.5rem;
+        margin-bottom: -0.4rem;
+      }
+      color: var(--white);
+      &:hover {
+        color: var(--lightGray);
+      }
     }
   }
 `
