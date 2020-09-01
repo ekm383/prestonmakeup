@@ -49,7 +49,7 @@ const StyledPromo = styled.div`
       color: var(--white);
     }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: lighter;
       line-height: 1.5rem;
       color: var(--white);
