@@ -60,7 +60,7 @@ const Ul = styled.ul`
     a {
       padding-bottom: 0.4rem;
       text-decoration: none;
-      color: var(--black);
+      color: var(--white);
       transition: 0.3s ease-in-out;
       &:hover {
         cursor: pointer;

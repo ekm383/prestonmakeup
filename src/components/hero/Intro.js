@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { FaInstagram } from "react-icons/fa"
 import Background from "./Background"
 
 const Intro = () => {
@@ -17,9 +16,7 @@ const Intro = () => {
             <button>masterclass</button>
           </div>
           <div className="social-box">
-            <p>
-              Preston Meneses <FaInstagram />
-            </p>
+            <p>Preston Meneses | Los Angeles, CA</p>
           </div>
         </div>
       </Background>
@@ -59,12 +56,9 @@ const StyledIntro = styled.div`
     color: var(--white);
     padding: 1rem 0rem;
     p {
-      font-size: 1rem;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
       font-weight: lighter;
-    }
-    svg {
-      font-size: 1.5rem;
-      margin-bottom: -0.4rem;
     }
   }
   button {
@@ -78,6 +72,7 @@ const StyledIntro = styled.div`
     font-weight: lighter;
     letter-spacing: 2px;
     border: 1px solid var(--white);
+    border-radius: 10px;
     transition: 0.4s ease-in-out;
     &:hover {
       cursor: pointer;
@@ -85,6 +80,9 @@ const StyledIntro = styled.div`
       border: 1px solid var(--white);
       color: var(--black);
     }
+  }
+  .pattern {
+    height: 150px;
   }
   @media (max-width: 768px) {
     .container {
@@ -107,8 +105,10 @@ const StyledIntro = styled.div`
       font-size: 0.8rem;
       margin-right: 1rem;
       padding: 0;
+      transform: rotate(0deg);
     }
-    button {
+    .pattern {
+      height: 75px;
     }
   }
 `

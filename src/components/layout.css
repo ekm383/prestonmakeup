@@ -6,16 +6,17 @@
 :root {
   --mainColor: #000000;
   --darkGray: #171717;
-  --gray: #666666;
-  --lightGray: #ababab;
+  --gray: #b5b5b5;
+  --lightGray: #cecece;
   --white: #ffffff;
   --black: #000000;
+  --beige: #86695285;
 }
 
 body {
   font-family: "Helvetica";
-  background-color: var(--lightGray);
-  color: var(--gray);
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 h1,
