@@ -13,9 +13,6 @@ const Intro = () => {
               PRESTON <br />
               MAKEUP
             </h1>
-            <a href="https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ">
-              <button>masterclass</button>
-            </a>
           </div>
           <div className="social-box">
             <p>Preston Meneses | Los Angeles, CA</p>

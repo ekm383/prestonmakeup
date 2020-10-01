@@ -17,12 +17,6 @@ class RightNav extends Component {
       },
       {
         id: 2,
-        path:
-          "https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ",
-        text: "Masterclass",
-      },
-      {
-        id: 3,
         path: "/contact",
         text: "Contact",
       },
