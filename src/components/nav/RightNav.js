@@ -28,7 +28,7 @@ class RightNav extends Component {
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
-              <Link fade to={item.path} className="nav-link">
+              <Link to={item.path} className="nav-link">
                 {item.text}
               </Link>
             </li>

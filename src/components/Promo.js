@@ -4,18 +4,29 @@ import styled from "styled-components"
 const Promo = () => {
   return (
     <StyledPromo>
-      <div className="container">
+      <div className="container" id="events">
         <div className="promo-box">
-          <h4>GIVE ME A BEAT</h4>
-          <p>Sunday, September 27th 3:00pm PST</p>
+          <h2>Preston Meneses: Makeup Demo</h2>
           <p>
-            Preston will demonstrate his sculpting, highlighting, makeup
-            placement, and couture glam along with products he uses.
+            <strong>Date & Time:</strong> Thursday, July 29th 6:00pm - 8:00pm
+            HST
+          </p>
+          <p>
+            <strong>Location:</strong> 24/7 Danceforce 46-056 Kamehameha Hwy
+            Kaneohe, HI 96744
+          </p>
+          <br />
+          <p>
+            Watch celebrity makeup artist Preston Meneses demonstrate his makeup
+            skills on local musician Ana Vee! Sponsered gift bag valued at $50
+            by Cammy Nguyen www.cammynguyen.com. Meet and greet with Preston &
+            Ana after the class! Reccomended for ages 14 and over. Located in
+            the Windward Mall.
           </p>
         </div>
         <div className="button-box">
-          <a href="https://us02web.zoom.us/webinar/register/WN_XDTMKQZwRYuso4HXvyHvSQ">
-            <button>masterclass</button>
+          <a href="https://www.eventbrite.com/e/preston-meneses-makeup-demo-with-ana-vee-tickets-161999032467">
+            <button>Sign Up</button>
           </a>
         </div>
       </div>
@@ -27,6 +38,7 @@ const StyledPromo = styled.div`
   width: 100%;
   height: 300px;
   margin: 0rem auto;
+  padding: 5rem 0;
   background: var(--beige);
   display: flex;
   justify-content: center;
@@ -45,8 +57,9 @@ const StyledPromo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    h4 {
+    h2 {
       font-size: 2rem;
+      margin-bottom: 1.4rem;
       color: var(--white);
     }
     p {
