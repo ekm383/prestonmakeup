@@ -56,7 +56,7 @@ const StyledIntro = styled.div`
     display: flex;
     align-items: flex-end;
     color: var(--white);
-    padding: 1rem 0rem;
+    padding: 0rem;
     p {
       font-size: 0.7rem;
       letter-spacing: 1px;

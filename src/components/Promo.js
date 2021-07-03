@@ -97,7 +97,7 @@ const StyledPromo = styled.div`
     }
   }
   @media (max-width: 768px) {
-    height: 350px;
+    height: 450px;
     .promo-box,
     .button-box {
       flex-basis: 100%;
