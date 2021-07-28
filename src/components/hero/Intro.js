@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Background from "./Background"
+import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Intro = () => {
@@ -14,7 +15,9 @@ const Intro = () => {
               PRESTON <br />
               MAKEUP
             </h1>
-            <button onClick={() => scrollTo("#events")}>Events</button>
+            <Link to="/contact">
+              <button>Contact</button>
+            </Link>
           </div>
           <div className="social-box">
             <p>Preston Meneses | Los Angeles, CA</p>
